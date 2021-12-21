@@ -2,12 +2,10 @@
 <html lang="{{ page.language | default: "ru" }}">
 	<head>
 		<meta charset="utf-8">
-		<title>{{ page.title }}</title>
+		<title>{{ page.title | append: ' | kvark128.github.io' }}</title>
 	</head>
 	<body>
-		<header>
-			<h1>{{ page.title }}</h1>
-		</header>
+		<h1>{{ page.title }}</h1>
 		<section>{{ content }}</section>
 	</body>
 </html>
